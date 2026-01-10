@@ -87,8 +87,9 @@ def display_search_info(search_type: str, tool_args: Dict[str, Any], api_url: st
         if date_range:
             info_parts.append(f"\n[dim]Date Range:[/dim] {date_range}")
         else:
-            date_min = tool_args.get("date_filed_min", "")
-            date_max = tool_args.get("date_filed_max", "")
+            # Check for filed_after/filed_before (new format) or date_filed_min/date_filed_max (old format)
+            date_min = tool_args.get("filed_after", tool_args.get("date_filed_min", ""))
+            date_max = tool_args.get("filed_before", tool_args.get("date_filed_max", ""))
             if date_min or date_max:
                 info_parts.append(f"\n[dim]Date Range:[/dim] {date_min or 'any'} to {date_max or 'present'}")
             else:
