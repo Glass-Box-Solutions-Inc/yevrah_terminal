@@ -50,7 +50,3 @@ notes.md
 todo.md
 brainstorm.md
 yevrah_terminal.code-workspace
-
-# VHS generation files (keep .tape files, exclude large video formats)
-demos/*.mp4
-demos/*.webm

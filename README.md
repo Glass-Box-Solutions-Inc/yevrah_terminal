@@ -2,18 +2,6 @@
 
 A terminal application for searching case law using the CourtListener API with dual search strategy (keyword + semantic).
 
-## Demo
-
-Watch Yevrah in action - from natural language query to full case analysis:
-
-![Yevrah Demo](demos/demo1-natural-language.gif)
-
-This demo shows:
-- Natural language query with jurisdiction and date filtering
-- Dual search strategy (keyword + semantic) with result tagging
-- Browsing 10 relevant Florida slip-and-fall cases
-- Selecting a case for detailed AI-powered legal analysis
-
 ## What It Does
 
 Yevrah takes a natural language query, interprets it using an LLM, and executes dual searches against CourtListener's database of millions of court opinions:
