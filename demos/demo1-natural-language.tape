@@ -9,29 +9,24 @@ Set Width 1400
 Set Height 900
 Set Padding 20
 Set Theme "Catppuccin Mocha"
+Set CursorBlink false
 
-Type "# Yevrah Terminal - Legal Research with Natural Language"
+# Start from the yevrah_terminal directory with venv activated
+Type@500ms "python main.py"
 Enter
+Sleep 4s
+
+# Show the welcome/prompt
 Sleep 1s
-Type "cd yevrah_terminal"
-Enter
-Sleep 500ms
-Type "source venv/bin/activate"
-Enter
-Sleep 500ms
-Type "python main.py"
-Enter
-Sleep 3s
 
-# Show natural language query
-Type "customer slip and fall at grocery store, florida, last 3 years"
+# Natural language query
+Type@500ms "customer slip and fall at grocery store, florida, last 3 years"
 Enter
-Sleep 8s
 
-# Show scrolling through results
-Sleep 2s
+# Wait for search to complete and show results
+Sleep 12s
 
-# Exit gracefully
+# Exit
 Type "exit"
 Enter
 Sleep 1s

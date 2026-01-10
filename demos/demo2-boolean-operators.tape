@@ -9,25 +9,20 @@ Set Width 1400
 Set Height 900
 Set Padding 20
 Set Theme "Catppuccin Mocha"
+Set CursorBlink false
 
-Type "# Yevrah Terminal - Boolean Operator Intelligence"
+Type@500ms "python main.py"
 Enter
-Sleep 1s
-Type "cd yevrah_terminal && source venv/bin/activate"
-Enter
-Sleep 500ms
-Type "python main.py"
-Enter
-Sleep 3s
+Sleep 4s
 
 # Boolean operator query - shows dual search optimization
-Type "employment AND discrimination, california courts"
+Type@500ms "employment AND discrimination, california courts"
 Enter
-Sleep 8s
 
-# Show the results
-Sleep 2s
+# Wait for search to complete and show results
+Sleep 12s
 
+# Exit
 Type "exit"
 Enter
 Sleep 1s
