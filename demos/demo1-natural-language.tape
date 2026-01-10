@@ -11,20 +11,32 @@ Set Padding 20
 Set Theme "Catppuccin Mocha"
 Set CursorBlink false
 
-# Start from the yevrah_terminal directory with venv activated
+# Start the application
 Type@500ms "python main.py"
 Enter
-Sleep 4s
 
-# Show the welcome/prompt
-Sleep 1s
+# Wait 7 seconds for app to be ready for input
+Sleep 7s
 
-# Natural language query
-Type@500ms "customer slip and fall at grocery store, florida, last 3 years"
+# Enter the search query
+Type@500ms "slip and fall, florida, last 3 years"
 Enter
 
-# Wait for search to complete and show results
-Sleep 12s
+# Wait 7 seconds for search results to appear
+Sleep 7s
+
+# Let user see the results for a moment
+Sleep 2s
+
+# Select case #3 to analyze
+Type "3"
+Enter
+
+# Wait 10 seconds for analysis to appear
+Sleep 10s
+
+# Let user read some of the analysis
+Sleep 3s
 
 # Exit
 Type "exit"
