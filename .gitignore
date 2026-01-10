@@ -51,7 +51,6 @@ todo.md
 brainstorm.md
 yevrah_terminal.code-workspace
 
-# VHS generated GIFs (too large for git)
-demos/*.gif
+# VHS generation files (keep .tape files, exclude large video formats)
 demos/*.mp4
 demos/*.webm

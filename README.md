@@ -2,6 +2,23 @@
 
 A terminal application for searching case law using the CourtListener API with dual search strategy (keyword + semantic).
 
+## Demo
+
+### Natural Language Query
+Search using plain English with automatic jurisdiction and date parsing:
+
+![Natural Language Demo](demos/demo1-natural-language.gif)
+
+### Boolean Operator Intelligence
+Use Boolean operators with automatic optimization for dual search:
+
+![Boolean Operators Demo](demos/demo2-boolean-operators.gif)
+
+### Jurisdiction-Specific Search
+Target specific courts with natural language:
+
+![Jurisdiction Search Demo](demos/demo3-jurisdiction-search.gif)
+
 ## What It Does
 
 Yevrah takes a natural language query, interprets it using an LLM, and executes dual searches against CourtListener's database of millions of court opinions:
