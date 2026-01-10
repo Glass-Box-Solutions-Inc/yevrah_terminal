@@ -4,7 +4,7 @@ A terminal application for searching case law using the CourtListener API with d
 
 ## Demo
 
-[![Yevrah Terminal Demo](yervah_terminal.png)](https://www.loom.com/share/e9e4ca6fcab546a8a537873ecd237ade)
+[![Yevrah Terminal Demo](yevrah_terminal.png)](https://www.loom.com/share/e9e4ca6fcab546a8a537873ecd237ade)
 
 **[▶️ Watch the full demo](https://www.loom.com/share/e9e4ca6fcab546a8a537873ecd237ade)** - See Yevrah in action with a complete workflow demonstration
 
