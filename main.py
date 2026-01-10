@@ -1,5 +1,5 @@
 """
-Main entry point for the Guided Legal Research Assistant.
+Main entry point for the AI-Enabled Research Assistant.
 A conversational terminal app that helps litigators find relevant case law.
 """
 import sys
@@ -39,7 +39,7 @@ def display_welcome():
     """Display the welcome banner."""
     welcome_text = """
 [bold cyan]━━━ YERVAH ━━━[/bold cyan]
-[dim]Your Legal Research Assistant[/dim]
+[dim]AI-Enabled Research Assistant[/dim]
 
 [magenta]✨ Dual Search Strategy with AI Reranking[/magenta]
 [dim]• Runs both Keyword AND Semantic searches in parallel
@@ -60,7 +60,7 @@ def display_welcome():
     disclaimer_text = """
 [yellow]⚠️  LEGAL DISCLAIMER[/yellow]
 
-This is an AI-powered legal research assistant provided for informational purposes only.
+This is an AI-enabled research assistant provided for informational purposes only.
 It does not constitute legal advice. Always independently verify case citations, holdings,
 and legal principles before relying on them. Use your professional judgment in evaluating
 the relevance and applicability of search results to your specific situation.

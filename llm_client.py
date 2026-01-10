@@ -1,5 +1,5 @@
 """
-LLM Client for legal research assistant using Groq API with function calling.
+LLM Client for AI-enabled research assistant using Groq API with function calling.
 """
 import json
 import os
@@ -11,12 +11,12 @@ from tools import TOOLS, format_tool_call_args, execute_tool, format_results_for
 
 load_dotenv(override=True)  # Force reload to pick up .env changes
 
-# System prompt for the legal research assistant
-# Reference: 
+# System prompt for the AI-enabled research assistant
+# Reference:
 # - https://console.groq.com/docs/tool-use/overview
 # - https://console.groq.com/docs/structured-outputs
 # - https://www.courtlistener.com/help/search-operators/
-SYSTEM_PROMPT = """You are **Yervah**, an elite legal research assistant with 20+ years of experience helping litigators find winning case law.
+SYSTEM_PROMPT = """You are **Yervah**, an AI-enabled research assistant.
 
 ## CRITICAL: ALWAYS USE DUAL SEARCH (BOTH KEYWORD + SEMANTIC)
 
@@ -521,7 +521,7 @@ This does not constitute legal advice. Do not rely on it as a substitute for con
 
 
 class LLMClient:
-    """Client for interacting with Groq LLM with function calling for legal research."""
+    """Client for interacting with Groq LLM with function calling for AI-enabled research."""
     
     def __init__(self, model: Optional[str] = None):
         """
@@ -555,7 +555,7 @@ class LLMClient:
     def get_welcome_message(self) -> str:
         """Get the initial welcome message from the assistant."""
         if self.client is None:
-            return """Hello! I'm Yervah, your legal research assistant.
+            return """Hello! I'm Yervah, your AI-enabled research assistant.
 
 I'm currently running in direct mode (no AI assistance). You can still search CourtListener, but I won't be able to help craft your queries or analyze results.
 
@@ -566,7 +566,7 @@ To enable full AI-assisted research, add your Groq API key to the .env file."""
             # Prime the conversation with context - include query examples
             self.chat_history.append({
                 "role": "user",
-                "content": """Hello, I need help with legal research. Please greet me and show 3-4 example queries I could ask, demonstrating natural language with jurisdiction and time parameters."""
+                "content": """Hello, I need help with legal research. Please greet me as an AI-enabled research assistant and show 3-4 example queries I could ask, demonstrating natural language with jurisdiction and time parameters."""
             })
             
             # groq/compound doesn't support standard tool calling
@@ -596,9 +596,9 @@ To enable full AI-assisted research, add your Groq API key to the .env file."""
             return assistant_message
             
         except Exception as e:
-            return f"""Hello! I'm Yervah, your legal research assistant.
+            return f"""Hello! I'm Yervah, your AI-enabled research assistant.
 
-I've helped litigators find winning case law for over 20 years. Just describe your legal issue in natural language - I'll handle the search parameters.
+Just describe your legal issue in natural language - I'll handle the search parameters.
 
 **Example Queries:**
 • "slip and fall in grocery store, California state courts, last 5 years"
@@ -987,7 +987,7 @@ Only include the parameters you need. Always include query and type at minimum.
         try:
             # Simple completion without tools - just analysis
             # Explicit system prompt to NOT search and to rate relevance first
-            system_content = """You are Yervah, an expert legal research assistant. Analyze ONLY the provided case opinion.
+            system_content = """You are Yervah, an AI-enabled research assistant. Analyze ONLY the provided case opinion.
 
 CRITICAL INSTRUCTIONS:
 - Do NOT suggest searching for more cases

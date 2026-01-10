@@ -1,10 +1,12 @@
-# Yevrah Terminal - Legal Research Tool
+# Yevrah Terminal - AI-Enabled Research Tool
 
 A terminal application for searching case law using the CourtListener API with dual search strategy (keyword + semantic).
 
 ## Demo
 
-**[▶️ Watch Demo Video](https://www.loom.com/share/e9e4ca6fcab546a8a537873ecd237ade)** - See Yevrah in action with a complete workflow demonstration
+[![Watch Demo Video](https://cdn.loom.com/sessions/thumbnails/e9e4ca6fcab546a8a537873ecd237ade-95c11b0f7cf14bc9-full-play.gif)](https://www.loom.com/share/e9e4ca6fcab546a8a537873ecd237ade)
+
+**[▶️ Watch the full demo](https://www.loom.com/share/e9e4ca6fcab546a8a537873ecd237ade)** - See Yevrah in action with a complete workflow demonstration
 
 ## What It Does
 

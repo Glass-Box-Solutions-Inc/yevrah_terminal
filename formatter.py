@@ -392,7 +392,7 @@ def display_info(message: str):
 def display_welcome():
     """Display welcome message (legacy - kept for compatibility)."""
     welcome_text = """
-[bold cyan]Legal Research Assistant[/bold cyan]
+[bold cyan]AI-Enabled Research Assistant[/bold cyan]
 
 I'm here to help you find relevant case law using the CourtListener database.
 
