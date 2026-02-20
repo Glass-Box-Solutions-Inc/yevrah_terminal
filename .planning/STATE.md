@@ -40,11 +40,7 @@
 ## Recent Activity
 
 <!-- SQUEEGEE:AUTO:START recent-activity -->
-- `2026-01-12` Remove ideas.md from tracking
-- `2026-01-12` Fix 413 Request Too Large error from accumulated chat history
-- `2026-01-11` Fix web version URL in README
-- `2026-01-11` Add web version link to README
-- `2026-01-11` Lots of updates to front and backend
+- `2026-02-20` **chore:** add Squeegee-generated documentation
 <!-- SQUEEGEE:AUTO:END recent-activity -->
 
 ---

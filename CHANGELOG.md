@@ -8,6 +8,11 @@ All notable changes to this project are documented here. Entries are auto-genera
 ---
 
 <!-- SQUEEGEE:AUTO:START changelog-entries -->
+### 2026-02-20
+
+**Maintenance:**
+- **docs:** add Squeegee-generated documentation (`4bd3fb7`)
+
 ### 2026-01-12
 
 **Other:**
